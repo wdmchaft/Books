@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <Pagina>
+        <Campo>
+            <x>58</x>
+            <y>260</y>
+            <Width>534</Width>
+            <Height>70</Height>
+            <Linhas>4</Linhas>
+            <Texto>In the morning </Texto>	
+        </Campo>
+        <Campo>
+            <x>58</x>
+            <y>340</y>
+            <Width>534</Width>
+            <Height>70</Height>
+            <Linhas>4</Linhas>
+            <Texto>In the afternoon </Texto>	
+        </Campo>
+        <Campo>
+            <x>58</x>
+            <y>420</y>
+            <Width>534</Width>
+            <Height>70</Height>
+            <Linhas>4</Linhas>
+            <Texto>At night </Texto>	
+        </Campo>
+    </Pagina>

@@ -1,0 +1,28 @@
+//
+//  LeavesCache.h
+//  Reader
+//
+//  Created by Tom Brow on 5/12/10.
+//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Updated in 2012 by Sir Cheshire
+
+#import <Foundation/Foundation.h>
+
+@protocol LeavesViewDataSource;
+
+@interface LeavesCache : NSObject {
+	NSMutableDictionary *pageCache;
+	id<LeavesViewDataSource> __unsafe_unretained dataSource;
+	CGSize pageSize;
+}
+
+@property (nonatomic, assign) CGSize pageSize;
+@property (unsafe_unretained) id<LeavesViewDataSource> dataSource;
+
+- (id) initWithPageSize:(CGSize)aPageSize;
+- (CGImageRef) cachedImageForPageIndex:(NSUInteger)pageIndex;
+- (void) precacheImageForPageIndex:(NSUInteger)pageIndex;
+- (void) minimizeToPageIndex:(NSUInteger)pageIndex;
+- (void) flush;
+
+@end
